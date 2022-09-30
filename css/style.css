@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+.page{
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+}
+.body{
+    font-family: 'DM Sans', sans-serif;
+    background: #171717;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    min-width: 100%;
+    min-height: 100vh;
+}
+ul{
+    padding: 0;
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+li{
+   list-style-type: none;
+   display: inline;
+   
+}
+.title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+
+/* header */
+.header{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    margin-top: 30px;
+    margin-left: 20px;
+    grid-gap: 30px;
+    align-items: center;
+}
+.header-nav{
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    margin: 0;
+    grid-gap: 20px;
+
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+.header-item{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+
+
+
+/* main */
+.main{
+    margin-top: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: grid;
+    grid-template-rows: repeat(6, max-content);
+    max-width: 2000px;
+}
+.main-item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.main-title{
+    margin-top: 10rem;
+    text-align: left;
+}
+.main-text{
+    font-weight: 500;
+    font-size: 18px;
+    color: #828282;
+    margin-top: 10px;
+}
+.item-left{
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-gap: 10px;
+}
+.active-button{
+    background-color: #27AE60;
+    padding: 12px 27px;
+    border: 1px solid #27AE60 ;
+}
+.passive-button{
+    padding: 12px 35px;
+    border: 1px solid;
+}
+
+
+
+
+/* About */
+.about{
+    margin-top: 50px;
+    text-align: center;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title-about{
+    margin-bottom: 30px;
+}
+
+
+
+/* items */
+.items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+    margin-top: 120px;
+    
+}
+.item-p{
+    margin-bottom: 0;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.item-text{
+    margin: 0;
+}
+
+
+
+
+/* what-i-do */
+.what-i-do{
+    margin-top: 130px;
+}
+.what-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content:center;
+}
+.what-div{
+    background: #212121;
+    padding-left: 50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 10px;
+    min-width: 225px;
+
+    border: 1px solid #11ffee00 ;
+    border-bottom: 5px solid #11ffee00;
+}
+.what-div:hover{
+    border: 1px solid black;
+    border-bottom: 5px solid #27AE60;
+}
+.what-img{
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+.what-item{
+    color: #535353;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    padding-right: 70px;
+    padding-bottom: 36px;
+    text-align: left;
+}
+
+
+/* my-skils */
+.my-skils{
+    display: grid;
+    margin-top: 130px;
+}
+.skils-list{
+    background: #212121;
+    margin-top: 30px;
+    min-width: 225px;
+    min-height: 235px;
+
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-around;
+    align-content: center;
+}
+.skils-item{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #27AE60;
+    text-align: center;
+}
+.item-highlite{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 94px;
+    color: #4F4F4F;
+}
+
+
+/* get-in-touch */
+.name{grid-area: name;}
+.last-name{grid-area: last-name;}
+.email{grid-area: email;}
+.phone-number{grid-area: phone-number;}
+.textarea{grid-area: textarea;}
+.submit{grid-area: submit;}
+.get{
+    margin-top: 130px;
+}
+form{
+   margin-top: 40px;
+   margin-left: 80px;
+   margin-right: 80px;
+   display: grid;
+   grid-gap: 45px;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-areas: "name last-name"
+                        "email phone-number"
+                        "textarea textarea"
+                        "submit submit";
+}
+.form-input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 5px solid #4F4F4F;
+    min-width: 400px;
+}
+.form-area{
+    background-color: transparent;
+    min-width: 845px;
+    border: 5px solid #4F4F4F;
+}
+.form-area:hover{
+    border: 5px solid #000;
+}
+.form-input:hover{
+    border: none;
+    border-bottom: 5px solid #000;
+}
+input,textarea:focus{
+    outline: none;
+}
+input,textarea{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4F4F4F;
+}
+textarea{
+    resize: none;
+}
+.name, .email{ 
+    justify-self: end;
+}
+.textarea{
+justify-self: center;
+}
+.submit{
+    justify-self: center;
+}
+.button{
+    background-color: #27AE60;
+    color: white;
+    padding: 12px 30px ;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+}
+
+
+/* footer */
+.footer{
+    margin-top: 160px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #4F4F4F;
+}
